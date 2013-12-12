@@ -25,8 +25,8 @@ exports.config =
       joinTo: 'stylesheets/app.css'
       order:
         before: [
-          'vendor/styles/normalize.css',
-          'vendor/styles/main.css'
+          'vendor/styles/bootstrap.css',
+          'app/styles/application.less'
         ]
 
     templates:
@@ -41,6 +41,13 @@ exports.config =
   plugins:
     jshint:
       pattern: /^app\/app.js/
+    autoReload:
+      enabled:
+        css: on
+        js: on
+        assets: on
+    jade:
+      pretty: yes
 
   server:
     port: 3333

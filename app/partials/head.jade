@@ -1,0 +1,17 @@
+head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    title PageTitle
+
+    link(rel="stylesheet" href="stylesheets/app.css")
+    link(rel="stylesheet" href="stylesheets/custom.css")
+
+    script(type="text/javascript").
+        window.brunch = window.brunch || {};
+        window.brunch['auto-reload'] = {enabled: true};
+
+    script(src="javascripts/vendor.js")
+    script(src="javacripts/app.js")
+    script.
+        require('initialize');
